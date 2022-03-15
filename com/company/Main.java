@@ -14,15 +14,12 @@ public class Main {
         int c = calc.multiply.apply(3, 3);
         calc.println.accept(c);
 
-        try {
-            int devide = calc.devide.apply(5, 3);
-            calc.println.accept(devide);
 
-            int devideByZero = calc.devide.apply(3, 0);
-            calc.println.accept(devideByZero);
-        } catch (ArithmeticException e) {
-            System.out.println("На ноль делить нельзя");
-        }
+        int devide = calc.devide.apply(5, 3);
+        calc.println.accept(devide);
+
+        int devideByZero = calc.devide.apply(3, 0);
+        calc.println.accept(devideByZero);
 
         int pow = calc.pow.apply(5);
         calc.println.accept(pow);
